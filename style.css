@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+/* 全体のスタイル */
+html
+body{
+   min-width: 960;
+   /* ackgrbound:linear-gradient(#111216, rgb(33, 44, 145)) */
+   background-color: #000;
+}
+
+
+
+/* 一番大きい枠から */
+.page{
+    position: relative;
+}
+/* 
+/* main-contentの要素 */
+/* .main-visual,
+.intro-section {
+    margin: 30px 0;
+    border: 5px ;
+} */ 
+
+/* .intro-sectionの要素 */
+/* .intro-section__header,
+.intro-section__nav,
+.intro-section__content,
+.intro-section__contact{
+    margin: 30px 0;
+    border: 5px ;
+} */
+/* page */
+.inr{
+    widows: 960px;
+    margin: 0 auto;
+}
+
+
+/* --------------------------------------------
+page-header 
+ --------------------------------------------*/
+ page-header {
+     padding: 17px 0;
+    ;
+ }
+
+ /* 横並び */
+.page-header__inr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #252525
+}
+
+/* 横並び */
+.page-header__info{
+    display: flex;
+    color: #fff;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-header-info__txt {
+    margin-right: 30px;
+}
+
+/* 横並び */
+.page-header-info__txt span {
+    display: block;
+    font-size: 1.4rem;
+}
+
+.page-header__info__btn {
+    min-width: 155px;
+    padding: calc((52px -(1.6rem * 1.6)) 2)0;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    
+}
+
+/*  --------------------------------------------
+.page-footer 
+ ----------------------------------------------*/
+/* padding 要素の中身の幅 */
+.page-footer{
+    padding: 40px 0;
+    color: white;
+    background-color: #31312d;
+}
+
+.page-footer small{
+    display: block;
+    font-size:  1.2rem;
+    line-height: 1;
+}
+
+
+/*  --------------------------------------------
+.main-visual
+ --------------------------------------------   */
+  .main-visual{
+    position: relative;
+    height: 480px;
+    background: center center no-repeat;
+    background-image: url("AI.jpeg");
+    background-size: cover;
+    white-space: nowrap;
+}
+
+
+.main-visual__ttl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-weight: normal;
+    font-size:  70px;
+    font-family:"YuGothic", "游ゴシック";
+    transform: translate(-50%, -50%);
+}
+/*  --------------------------------------------
+ナビゲーション
+ --------------------------------------------*/  
+.intro-section__nav{
+    padding: 88px 0 80px;
+}
+
+.intro-section__nav ol {
+    display: flex;
+    justify-content: space-between;
+    width: 810px;
+    margin: 0 auto;
+}
+
+.intro-section__nav ol li {
+    position: relative;
+  }
+
+.intro-section__nav ol li:after {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: translateX(-50%) rotate(45deg);
+    content: "";
+  }
+
+.intro-section__nav ol li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 230px;
+    height: 230px;
+    padding: 0 25px;
+    color: #fff;
+    font-size: 25px;
+        line-height: 1.2;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+
+/*-------------------------------------^^^
+コンテンツブロック画像と１ブロック
+-------------------------------------*/
+.intro-section__block{
+    display: flex;
+    height: 400px;
+}
+
+.intro-section__block > * {
+    width: 100%;
+}
+
+/* 偶数目のばあい、横並びを反転 */
+.intro-section__block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+/*  
+画像入れる
+ */
+
+.intro-section__block:nth-child(1) .intro-section__img-area{
+    background-image: url("AI2.jpg");
+    background-size: 100% ;
+}
+
+.intro-section__block:nth-child(2) .intro-section__img-area{
+    background-image: url("t-bunp.png");
+    background-size: 100%;
+}
+
+.intro-section__block:nth-child(3) .intro-section__img-area{
+    background-image: url("titanic.jpeg");
+    background-size: 100%;
+}
+
+.intro-section__block:nth-child(4) .intro-section__img-area{
+    background-image: url("hist.png");
+    background-size: 100vh;
+}
+
+.intro-section__block:nth-child(5) .intro-section__img-area{
+    background-image: url("hist.3class.png");
+    background-size: 100%;
+}
+
+.intro-section__block:nth-child(6) .intro-section__img-area{
+    background-image: url("implot.png");
+    background-size: 100%;
+}
+/* 画像エリア */
+.intro-section__image-area{
+    background: center center no-repeat ;
+    background-size: cover;
+}
+
+/* 文章エリア */
+.intro-section__txt-area {
+    box-sizing: bgorder-box;
+    color: #fff;
+    background-color: #31312d;
+}
+
+/* タイトル */
+
+.intro-section__txt-area h4 {
+    margin-bottom: 24px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+/* 文章 */
+.intro-section__txt-area p {
+font-size: 1.6rem;
+line-height: 1.5;
+}
+
+
+/*-------------------------------------^^^
+セクションの始まり（おび）
+-------------------------------------*/
+.section-header__ttl{
+    position: relative;
+    color: #fff;
+    margin: 0;
+    padding:  calc((87px - (30px * 1.6)) / 2) 0;
+    text-align: center;
+    background-color: #000;
+}
+
+/* 三角帯についての記述 */
+.section-header__ttl:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    /* border-color: #aaa transparent transparent transparent; */
+    border-color: #252525 transparent transparent transparent;
+    border-style: solid;
+    border-width: 28px 28px 0;
+    transform: translate(-50%, 100%);
+    content: "";
+  }
+
+.section-header__ttl{
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+  /*-------------------------------------^^^
+コンタクトブロック
+-------------------------------------*/
+
+  .intro-section__contact {
+    padding: 100px 0;
+  }
+  
+  .contact-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 55px 40px 147px;
+    background-color:#000;
+    /* #242421 */
+  }
+  
+  .contact-block__txt {
+    font-size: 2.2rem;
+    color: white;
+  }
+  
+  .contact-block__txt span {
+    display: block;
+    font-size: 1.4rem;
+  }
+  
+  .contact-block__btn {
+    width: 370px;
+    padding: calc((83px - (2.2rem * 1.6)) / 2) 0;
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    background-color: #31312d;
+  }
+
+

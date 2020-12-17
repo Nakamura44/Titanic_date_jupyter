@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang ="ja">
+s
+        <meta chareset = "utf-8">
+        <!-- 画像の大きさはデバイスに適応する-->
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+
+        <!--  internetEXの最新バージョンで表示する -->
+        <meta http-equiv="X-UA-Compatible" content= "IE=edge"/>
+        <link rel="stylesheet" href="./style.css">
+        <title>NAKAMURA PORTFOLIO</title>
+    </head>
+    <body>
+ <!-- ヘッダー右上の部分 -->
+            
+            <!-- div 入力位置の指定、idは同じdivないの優先順位の指定 -->
+            <header class = "page-header">
+                <div class="page-header__inr inr">
+                <h1 class= "page-header__logo">
+                        <!-- <img src="AI.jpeg" alt = "main"> -->
+                </h1>   
+                <div class = "page-header__info page-header-info">
+                    <div class= "page-header-info__txt">
+                        <span>TEL 00-0000-0000</span>
+                        <span>営業時間　平日 9:00 ~ 18:00</span> 
+                    </div>
+                        <!-- aタグ　リンクに飛ぶためにつける -->
+                  <a class="page-header-info__btn" href="#contact">お問い合わせ</a>  
+                 </div>
+                </div>
+            </header>   
+    <!-- メインの場所-->
+            <main class="main-content">
+                <div class="main-visual">
+                    <h2 class= "main-visual__ttl">”未来”は「過去」 からやってくる</h2>
+                </div>
+    <!-- セクションの場所  BEM css 部分追加できように　__枕詞がつく -->
+                <section class ="intro-section">
+                <div class = "intro-section__header section-header">
+                    <h3 class="section-header__ttl">過去のデータを分析して、未来を予測する</h3>
+                </div>
+                <nav class = "intro-section__nav">
+                    <div class="inr">
+                        <ol>
+                            <li>
+                                <a href = "#content1">1.pythonによる分析</a>
+                            </li>
+                            <li>
+                                <a href = "#content2">2.t分布による予測</a>
+                            </li>
+                            <li>
+                                <a href = "#content3">3.沈没したタイタニック号</a>
+                            </li>
+                        </ol>
+                    </div>
+                </nav>
+                             <!-- セクション１ -->
+                <div class = "intro-section__content">
+                    <div class="intro-section__block" id ="content1"> 
+                        <div class="intro-section__img-area"></div>
+                        <div class="intro-section__txt-area">
+                            <h4>１.pythonによるデータ分析</h4>
+                            <p>pythonはデータ分析に強い言語です。numpy,pandasといった豊富な数学ライブラリに加わえ、
+                                人工知能の技術として有名な機械学習でも活躍します。また画像検知やwebスクレイピングなど
+                                様々な機能が充実している、今最も人気が高いプログラミング言語です。
+                            </p>
+                            </p>
+                        </div>                                                                            
+                    </div>
+                    <div class="intro-section__block" id ="content2"> 
+                        <div class="intro-section__img-area"></div>
+                        <div class="intro-section__txt-area">
+                            <h4>2.t分布</h4>
+                            <p>t分布はゴセット（William Sealy Gosset）が提唱しました。「Student」というペンネームを用いたことから、頭文字のtをとります。
+                                今回はmatplotlibによる図形の作成。標本数が少ない場合でも、標準正規分布に近い形の図となります。　　（信頼区間95%）
+                        </div>
+                    </div>
+                    <div class="intro-section__block" id ="content3"> 
+                        <div class="intro-section__img-area"></div>
+                        <div class="intro-section__txt-area">
+                            <h4>3.沈没したタイタニック号の分析</h4>
+                            <p>映画では語られなかった、真実を見てみましょう。沈没した巨大な船には多くの人が乗船していました。船には1~3等の客室がありました。
+                                pythonによる分析で、当時の乗客層が見えてきました。そして、、、生き残った方々の特徴もわかってきました。。。。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="intro-section__block" id ="content4"> 
+                        <div class="intro-section__img-area"></div>
+                        <div class="intro-section__txt-area">
+                            <h4>4.ヒストグラム（年齢層の把握）</h4>
+                            <p>グラフから10代後半から40代までの年代層が多いことがわかった。子供も乗船していることから、家族での旅行者も多かったことが伺える。
+                                高齢の客層も少数であるが、乗船していたようだ。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="intro-section__block" id ="content5"> 
+                        <div class="intro-section__img-area"></div>
+                        <div class="intro-section__txt-area">
+                            <h4>5.ヒストグラム（客室の等級による比較）</h4>
+                            <p>１が高価な客室を表す。全体的に男性の乗船が多いことがわかった。また１等客室は高価なため子供の利用は少ない。
+                                逆に３等客室は家族での乗船が多いことがこのグラフからわかった。　</p>
+                        </div>
+                </div>
+                <div class="intro-section__block" id ="content5"> 
+                    <div class="intro-section__img-area"></div>
+                    <div class="intro-section__txt-area">
+                        <h4>6.回帰モデルの可視化（生存者を知る）</h4>
+                        <p>女性と男性の生存者を可視化すると全く違う結果が返ってくることがわかった。女性は年齢が高くなるにつれて、生存率も高い。
+                            逆に男性は、年齢が高くなるにつれて生存率が低いことがわかった。どちらにしても多くの方が犠牲になってしまった痛ましい事故には違いない。
+                        </p>
+                    </div>
+            </div>
+                             <!-- コンテンツ --上記のinotro-selection__contactは余白を含む -->
+                <div class = "intro-section__content">
+                    <div class="inr">
+                        <div class = "contact-block">
+                            <p class="contact-block__txt">TEL 00-0000-0000<span>(受付時間 平日 9:00~18:00)</span></p>
+                            <a class= "contact-block__btn" href=" ">問い合わせボタン</a>
+                        </div>
+                    </div>   
+                </div>
+             </section>  
+            </main>
+    <!--フッターの場所 -->
+            <footer class="page-footer">
+                <div class="inr">
+                <p><small>©︎samplesamplesamplesamplesample</small></p>
+                </div>
+            </footer>  
+        </body> 
+</html>               
